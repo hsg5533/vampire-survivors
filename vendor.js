@@ -9124,14 +9124,12 @@
                 (void 0 !== e && (t = Percent(t, e, i)),
                 void 0 === this.tweenValueTask &&
                   (this.tweenValueTask = new cn(this, { eventEmitter: null })),
-                this.tweenValueTask
-                  .stop()
-                  .start({
-                    targets: this,
-                    value: t,
-                    duration: this.easeValueDuration,
-                    ease: this.easeValueMode,
-                  })),
+                this.tweenValueTask.stop().start({
+                  targets: this,
+                  value: t,
+                  duration: this.easeValueDuration,
+                  ease: this.easeValueMode,
+                })),
               this
             );
           },
